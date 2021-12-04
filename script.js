@@ -14,5 +14,12 @@ document.getElementById("click").addEventListener("click",function(){
 
     let val = document.getElementById('userValue').value;
     // alert(val);
+
+    if(val !=""){
     document.getElementById('image').setAttribute("src",`https://joeschmoe.io/api/v1/${val}`);
+    
+    }else{
+        alert("Please insert any name");
+        
+    }
 })
